@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Atualiza o sistema e instala as dependências necessárias
-apt-get update -y
-apt-get install -y \
+sudo apt-get update -y
+sudo apt-get install -y \
     libgstgl-1.0.so.0 \
     libgstcodecparsers-1.0.so.0 \
     libenchant-2.so.2 \

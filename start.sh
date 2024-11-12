@@ -3,4 +3,4 @@
 python3 -m playwright install
 
 # Executa o seu app
-python3 app.py
+python3 web_scrap_get_FIIs.py

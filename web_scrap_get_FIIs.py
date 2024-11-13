@@ -154,19 +154,5 @@ async def processar_ativos(ativos):
     # Imprime caminho do arquivo salvo
     print(f"Arquivo salvo em: {local_file_path}")
     
-    # Upload do arquivo XLSX para o Google Drive usando rclone
-    '''
-    try:
-        # Comando rclone para fazer o upload
-        rclone_command = f'C:\\Users\\hugo.dourado\\Documents\\get_pages_fiis_acoes\\rclone copy {
-            local_file_path} drive: -u --drive-import-formats xlsx'
-        # Executa o comando rclone
-        subprocess.run(rclone_command, shell=True, check=True)
-        print(f"Arquivo XLSX enviado para o Google Drive com sucesso usando rclone")
-
-    except subprocess.CalledProcessError as e:
-        print(f"Erro ao enviar arquivo para o Google Drive usando rclone: {e}") 
-    '''
-
 if __name__ == "__main__":
     asyncio.run(processar_ativos(ativos))
